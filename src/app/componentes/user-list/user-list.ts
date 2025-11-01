@@ -4,10 +4,11 @@ import { IUser } from '../../interfaces/user.interface';
 import { Observable, of } from 'rxjs';
 import { UsersListResponse } from '../../types/users-list-response';
 import { AsyncPipe } from '@angular/common';
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-user-list',
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, RouterLink],
   templateUrl: './user-list.html',
   styleUrl: './user-list.scss',
 })
